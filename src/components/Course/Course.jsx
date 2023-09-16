@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import { FaDollarSign  } from 'react-icons/fa';
 
 const Course = ({ course, handleSelectedToCart }) => {
   
@@ -20,7 +20,8 @@ const Course = ({ course, handleSelectedToCart }) => {
           {description}
         </p>
         <div className="flex justify-between items-center mb-6">
-          <div>
+          <div className="flex items-center gap-2"> 
+            <span><FaDollarSign></FaDollarSign></span>
             <p className="font-medium text-gray-400">Price : {price}</p>
           </div>
           <div>
