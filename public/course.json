@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/XzhZvrc/rectangle-3.png",
+        "course_name": "Introduction to C Programming",
+        "credit": 3,
+        "price": 15000,
+        "details": "Introduction to C Programming is a foundational course that covers the essentials of the C programming language. Learn the basics of coding, data structures, and algorithms while gaining hands-on experience in developing software applications using C."
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/Xxn6Ync/rectangle-4.png",
+        "course_name": "Introduction to Algorithms",
+        "credit": 4,
+        "price": 25000,
+        "details": "Introduction to Algorithms is an in-depth course exploring fundamental algorithmic concepts. Delve into problem-solving techniques, algorithm design, and analysis, equipping yourself with the tools to tackle complex computational challenges efficiently."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/yybSK7c/rectangle-5.png",
+        "course_name": "Introduction to C++ for DSA",
+        "credit": 5,
+        "price": 10000,
+        "details": "Introduction to C++ for DSA is a comprehensive course that combines C++ programming with data structures and algorithms. Master the language and problem-solving skills necessary to tackle complex computational tasks and optimize software performance."
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/bdxJ4D2/rectangle-8.png",
+        "course_name": "Basic Data Structures",
+        "credit": 3,
+        "price": 35000,
+        "details": "Basic Data Structures is an introductory course covering fundamental data structures such as arrays, linked lists, stacks, and queues. Explore how to store and manipulate data efficiently, a crucial skill for software development and problem-solving."
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/5n1zjdM/rectangle-1.png",
+        "course_name": "Introduction to OOP Python",
+        "credit": 2,
+        "price": 19000,
+        "details": "Introduction to OOP Python teaches the principles of object-oriented programming using Python. Explore classes, objects, inheritance, and encapsulation, empowering you to design and build modular, reusable, and efficient Python applications."
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/zndsDT1/rectangle-7.png",
+        "course_name": "Software Engineering",
+        "credit": 4,
+        "price": 23000,
+        "details": "Software Engineering is a discipline that focuses on the systematic development and maintenance of software. Learn to design, create, test, and manage software projects, applying best practices to ensure reliability, scalability, and efficiency."
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/VgcfQ2Y/rectangle-9.png",
+        "course_name": "AWS, Cloud Computing",
+        "credit": 5,
+        "price": 35000,
+        "details": "AWS, Amazon Web Services, is a leading cloud computing platform. Explore cloud computing concepts and AWS services, enabling you to deploy, manage, and scale applications and infrastructure in the cloud securely and efficiently."
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/BLxFmzL/rectangle-2.png",
+        "course_name": "Database (MySQL)",
+        "credit": 4,
+        "price": 19000,
+        "details": "MySQL is a popular open-source relational database management system. Learn to design, query, and manage databases, ensuring efficient data storage and retrieval, making it a vital skill for web development and data-driven applications."
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/b5sNP0P/rectangle-6.png",
+        "course_name": "Problem-Solving Part",
+        "credit": 3,
+        "price": 23000,
+        "details": "Problem-Solving is a critical skill in various fields. Develop the ability to analyze complex issues, break them down into manageable components, and devise effective solutions. Enhance your problem-solving prowess, a cornerstone of success in many domains"
+    }
+]
