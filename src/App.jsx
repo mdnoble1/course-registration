@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Courses from './components/Courses/Courses';
-import Bookmarks from './components/Bookmarks/Bookmarks';
+import Cart from './components/Cart/Cart';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   
-  const [bookMarks, setBookMarks] = useState([]); 
+  const [cartproduct, setCart] = useState([]); 
   const [totalPrice, setTotalPrice] = useState(0); 
   const [allTimes, setAllTimes] = useState(0); 
   const [remaining, setRemaining] = useState(0); 
@@ -17,7 +17,7 @@ function App() {
   
   const handleSelectedToCart = (course) => {
     
-    const isExist = bookMarks.find(item => item.id === course.id);
+    const isExist = cartproduct.find(item => item.id === course.id);
 
     let credit = course.time_hour;
     let count = course.price;
@@ -30,11 +30,11 @@ function App() {
     
     else {
       
-      bookMarks.forEach(item => {
+      cartproduct.forEach(item => {
         count += item.price;
       });
 
-      bookMarks.forEach(times => {
+      cartproduct.forEach(times => {
         credit += times.time_hour;
       });
 
@@ -50,11 +50,11 @@ function App() {
         const totalRemaining = 20 - credit;
         setRemaining(totalRemaining);
         setAllTimes(credit);
-        setTotalPrice(count.toFixed(2));
+        setTotalPrice(count);
 
         
-        const newBookMarks = [...bookMarks, course];
-        setBookMarks(newBookMarks);
+        const newCartProduct = [...cartproduct, course];
+        setCart(newCartProduct);
       }
     }
   }
@@ -65,7 +65,7 @@ function App() {
       <Header></Header>
       <div className='flex'>
         <Courses handleSelectedToCart={handleSelectedToCart}></Courses>
-        <Bookmarks bookMarks={bookMarks} allTimes={allTimes} remaining={remaining} totalPrice={totalPrice}></Bookmarks>
+        <Cart cartproduct={cartproduct} allTimes={allTimes} remaining={remaining} totalPrice={totalPrice}></Cart>
       </div>
       
       <ToastContainer/>

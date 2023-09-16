@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 
 const Course = ({ course, handleSelectedToCart }) => {
-  // Destructure properties from the 'Course' object
+  
   const { cover, title, description, price, time_hour } = course;
 
   return (

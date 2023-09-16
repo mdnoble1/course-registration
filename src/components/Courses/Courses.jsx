@@ -19,7 +19,7 @@ const Courses = ({ handleSelectedToCart }) => {
     return (
         <div className="w-3/4 grid grid-cols-3 gap-6">
             
-            {Courses.map(course => <Course key={course.id} course={course} handleSelectedToCart={handleSelectedToCart}></Course>)}
+            {courses.map(course => <Course key={course.id} course={course} handleSelectedToCart={handleSelectedToCart}></Course>)}
 
         </div>
     );
