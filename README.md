@@ -1,8 +1,11 @@
-# React + Vite
+# Project Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Users can select courses according to their choice and add those courses in the cart.
+- Users can track their credit hour limit and they will be notified when credit hour limit is over.
+- Users can calculate total price of the courses they select
 
-Currently, two official plugins are available:
+# How I managed the state in this assignment project :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- I have used useState hook to keep track and update the data of courses.
+- I have used useEffect hook to fetch data from API.
+- Then I have passed the state data as props to child components.
