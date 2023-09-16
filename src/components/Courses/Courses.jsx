@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
-const Courses = () => {
+const Courses = ({handleAddToCart}) => {
 
     const [courses , setCourses] = useState([]);
 
@@ -19,6 +19,7 @@ const Courses = () => {
                 courses.map(course => <Course 
                     key={course.id} 
                     course={course}
+                    handleAddToCart={handleAddToCart}
                     ></Course>)
             }
         </div>

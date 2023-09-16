@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaDollarSign } from 'react-icons/fa';
 
-const Course = ({course}) => {
+const Course = ({course , handleAddToCart}) => {
     
     const {image, course_name, credit, price, details} = course;
 
@@ -21,14 +22,18 @@ const Course = ({course}) => {
             {course.details}
         </p>
         <div className="flex justify-between items-center mb-6">
-            <div>
+            <div className='flex items-center gap-2'>
+             <span className='text-2xl'><FaDollarSign></FaDollarSign></span>
             <p className="font-medium  text-gray-400">Price : {course.price}</p>
             </div>
-            <div>
+            <div className="flex items-center gap-2">
+            <span className='text-2xl'><FaDollarSign></FaDollarSign></span>
             <p className="font-medium  text-gray-400">Credit : {course.credit}hr</p>
             </div>
         </div>
-        <button className="w-full bg-sky-500 py-2 rounded-md font-semibold text-lg text-white hover:bg-sky-400">
+        <button 
+        onClick={handleAddToCart}
+        className="w-full bg-sky-500 py-2 rounded-md font-semibold text-lg text-white hover:bg-sky-400">
             Select
         </button>
         </div>
