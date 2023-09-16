@@ -6,20 +6,20 @@ const Cart = ({ cartproduct, allTimes, remaining, totalPrice }) => {
     // console.log(allTimes, remaining, cartproduct); 
 
     return (
-        <div className="lg:w-1/4 border-t-2 p-3 text-left">
-            <h3 className="text-base font-medium border-b pb-3 border-b-gray-950 text-blue-600">
-                Credit Hour Remaining : {remaining}hr
+        <div className="w-1/4 px-10 pt-8 pb-16 text-left bg-gray-100 rounded-xl drop-shadow-2xl h-fit">
+            <h3 className="font-bold text-xl border-b pb-4 border-b-gray-400 text-blue-500">
+                Credit Hour Remaining {remaining} hr
             </h3>
-            <h4 className="text-lg font-bold py-2">Course Name :</h4>
+            <h4 className="font-bold text-xl py-4">Course Name :</h4>
             {cartproduct.map((cartitem, index) => (
                 <Cartitem key={index} cartitem={cartitem} id={index + 1} />
             ))}
 
-            <h3 className="text-base font-medium border-b py-3 mt-5 border-b-gray-950 border-t  border-t-gray-950 text-slate-500">
-                Total Credit Hour : {allTimes}hr
+            <h3 className="text-lg font-medium border-t border-t-gray-400 border-b border-b-gray-400 py-4 mt-5 text-gray-600">
+                Total Credit Hour : {allTimes}
             </h3>
 
-            <p className="text-base font-medium mt-3 text-slate-500">
+            <p className="text-lg font-medium mt-4 text-gray-600">
                 Total Price : {totalPrice} USD
             </p>
         </div>

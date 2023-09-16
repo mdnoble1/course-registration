@@ -7,7 +7,7 @@ const Cartitem = ({ id, cartitem }) => {
 
     return (
         <div>
-            <h4 className="text-base font-medium">{id}. {title}</h4>
+            <h4 className="font-medium text-lg text-gray-400">{id} {title}</h4>
         </div>
     );
 };

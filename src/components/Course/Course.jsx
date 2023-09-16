@@ -16,7 +16,7 @@ const Course = ({ course, handleSelectedToCart }) => {
         <h3 className="font-semibold text-lg mb-3">
           {title}
         </h3>
-        <p className="text-gray-400 text-sm text-justify mb-4">
+        <p className="text-gray-400 text-sm text-justify mb-4 h-36">
           {description}
         </p>
         <div className="flex justify-between items-center mb-6">

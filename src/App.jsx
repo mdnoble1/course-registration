@@ -24,7 +24,7 @@ function App() {
 
     if (isExist) {
 
-      return toast('You have already added'); 
+      return toast('Already Selected'); 
 
     } 
     
@@ -41,7 +41,7 @@ function App() {
       
       if (credit >= 20) {
 
-        return toast("You don't have enough credit balance");
+        return toast("You Don't Have Enough Credit");
 
       } 
       
@@ -63,11 +63,10 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className='flex'>
+      <main className='container mx-auto flex gap-20 my-16'>
         <Courses handleSelectedToCart={handleSelectedToCart}></Courses>
         <Cart cartproduct={cartproduct} allTimes={allTimes} remaining={remaining} totalPrice={totalPrice}></Cart>
-      </div>
-      
+      </main>
       <ToastContainer/>
     </>
   )
